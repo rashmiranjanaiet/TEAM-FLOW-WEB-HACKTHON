@@ -1,0 +1,822 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\It Computer Point\\Desktop\\NASA\\backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [13972] using WatchFiles
+INFO:     Started server process [19136]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     ('127.0.0.1', 55312) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 52553) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 55255) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+WARNING:  WatchFiles detected changes in 'app\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     connection closed
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19136]
+INFO:     Started server process [14392]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     ('127.0.0.1', 52434) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     ('127.0.0.1', 60762) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     ('127.0.0.1', 64962) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 56151) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 63061) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+WARNING:  WatchFiles detected changes in 'app\__init__.py', 'app\services\__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     connection closed
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14392]
+WARNING:  WatchFiles detected changes in 'app\config.py', 'app\services\nasa_client.py'. Reloading...
+INFO:     Started server process [15320]
+INFO:     Waiting for application startup.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 84, in _serve
+    await self.startup(sockets=sockets)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 95, in startup
+    await self.lifespan.startup()
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 56, in startup
+    await self.startup_event.wait()
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 132, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 700, in lifespan
+    await receive()
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+INFO:     Started server process [16748]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app\services\neo_processing.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16748]
+WARNING:  WatchFiles detected changes in 'app\main.py'. Reloading...
+INFO:     Started server process [21156]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 132, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 700, in lifespan
+    await receive()
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+INFO:     Started server process [18176]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     ('127.0.0.1', 53034) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+WARNING:  WatchFiles detected changes in 'app\config.py'. Reloading...
+INFO:     Shutting down
+INFO:     connection closed
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18176]
+WARNING:  WatchFiles detected changes in 'app\db.py', 'app\auth.py', 'app\schemas.py', 'app\models.py'. Reloading...
+INFO:     Started server process [4436]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 132, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 700, in lifespan
+    await receive()
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+INFO:     Started server process [1696]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app\main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1696]
+Process SpawnProcess-9:
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 76, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\main.py", line 14, in <module>
+    from app.models import User, WatchlistItem
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\models.py", line 25, in <module>
+    class WatchlistItem(Base):
+    ...<12 lines>...
+        user: Mapped[User] = relationship('User', back_populates='watch_items')
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_api.py", line 196, in __init__
+    _as_declarative(reg, cls, dict_)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 244, in _as_declarative
+    return _MapperConfig.setup_mapping(registry, cls, dict_, None, {})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 325, in setup_mapping
+    return _ClassScanMapperConfig(
+        registry, cls_, dict_, table, mapper_kw
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 572, in __init__
+    self._extract_mappable_attributes()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 1570, in _extract_mappable_attributes
+    value.declarative_scan(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<7 lines>...
+        is_dataclass,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\properties.py", line 709, in declarative_scan
+    self._init_column_for_annotation(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cls,
+        ^^^^
+    ...<2 lines>...
+        originating_module,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\properties.py", line 751, in _init_column_for_annotation
+    argument = de_stringify_union_elements(
+        cls, argument, originating_module
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\util\typing.py", line 341, in de_stringify_union_elements
+    return make_union_type(
+        *[
+    ...<8 lines>...
+        ]
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\util\typing.py", line 478, in make_union_type
+    return cast(Any, Union).__getitem__(types)  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+TypeError: descriptor '__getitem__' requires a 'typing.Union' object but received a 'tuple'
+WARNING:  WatchFiles detected changes in 'app\db.py'. Reloading...
+Process SpawnProcess-10:
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 76, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\main.py", line 14, in <module>
+    from app.models import User, WatchlistItem
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\models.py", line 25, in <module>
+    class WatchlistItem(Base):
+    ...<12 lines>...
+        user: Mapped[User] = relationship('User', back_populates='watch_items')
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_api.py", line 196, in __init__
+    _as_declarative(reg, cls, dict_)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 244, in _as_declarative
+    return _MapperConfig.setup_mapping(registry, cls, dict_, None, {})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 325, in setup_mapping
+    return _ClassScanMapperConfig(
+        registry, cls_, dict_, table, mapper_kw
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 572, in __init__
+    self._extract_mappable_attributes()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 1570, in _extract_mappable_attributes
+    value.declarative_scan(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<7 lines>...
+        is_dataclass,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\properties.py", line 709, in declarative_scan
+    self._init_column_for_annotation(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cls,
+        ^^^^
+    ...<2 lines>...
+        originating_module,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\properties.py", line 751, in _init_column_for_annotation
+    argument = de_stringify_union_elements(
+        cls, argument, originating_module
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\util\typing.py", line 341, in de_stringify_union_elements
+    return make_union_type(
+        *[
+    ...<8 lines>...
+        ]
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\util\typing.py", line 478, in make_union_type
+    return cast(Any, Union).__getitem__(types)  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+TypeError: descriptor '__getitem__' requires a 'typing.Union' object but received a 'tuple'
+WARNING:  WatchFiles detected changes in '.venv\Lib\site-packages\httpx\_transports\base.py', '.venv\Lib\site-packages\httpcore\_async\connection_pool.py', '.venv\Lib\site-packages\httpx\_urls.py', '.venv\Lib\site-packages\httpcore\_async\http2.py', '.venv\Lib\site-packages\httpx\_client.py', '.venv\Lib\site-packages\httpx\_exceptions.py', '.venv\Lib\site-packages\httpx\_types.py', '.venv\Lib\site-packages\httpx\_auth.py', '.venv\Lib\site-packages\httpcore\_sync\socks_proxy.py', '.venv\Lib\site-packages\httpcore\_sync\connection_pool.py', '.venv\Lib\site-packages\httpx\_transports\default.py', '.venv\Lib\site-packages\httpcore\_backends\auto.py', '.venv\Lib\site-packages\httpcore\_async\http_proxy.py', '.venv\Lib\site-packages\httpcore\_backends\base.py', '.venv\Lib\site-packages\httpcore\_backends\mock.py', '.venv\Lib\site-packages\httpcore\_sync\http2.py', '.venv\Lib\site-packages\httpcore\_synchronization.py', '.venv\Lib\site-packages\httpcore\_sync\interfaces.py', '.venv\Lib\site-packages\httpx\_models.py', '.venv\Lib\site-packages\httpx\_status_codes.py', '.venv\Lib\site-packages\httpx\_transports\asgi.py', '.venv\Lib\site-packages\httpcore\_utils.py', '.venv\Lib\site-packages\httpcore\_async\socks_proxy.py', '.venv\Lib\site-packages\httpx\_urlparse.py', '.venv\Lib\site-packages\httpx\_decoders.py', '.venv\Lib\site-packages\httpx\_content.py', '.venv\Lib\site-packages\httpx\_utils.py', '.venv\Lib\site-packages\httpcore\_ssl.py', '.venv\Lib\site-packages\httpx\__init__.py', '.venv\Lib\site-packages\httpcore\_trace.py', '.venv\Lib\site-packages\httpx\_transports\mock.py', '.venv\Lib\site-packages\httpcore\_models.py', '.venv\Lib\site-packages\httpcore\_backends\sync.py', '.venv\Lib\site-packages\httpcore\_async\__init__.py', '.venv\Lib\site-packages\httpcore\_sync\connection.py', '.venv\Lib\site-packages\httpcore\_async\connection.py', '.venv\Lib\site-packages\httpx\_main.py', '.venv\Lib\site-packages\httpcore\_async\http11.py', '.venv\Lib\site-packages\httpx\_multipart.py', '.venv\Lib\site-packages\httpx\__version__.py', '.venv\Lib\site-packages\httpcore\_exceptions.py', '.venv\Lib\site-packages\httpcore\_sync\http_proxy.py', '.venv\Lib\site-packages\httpx\_transports\__init__.py', '.venv\Lib\site-packages\httpx\_transports\wsgi.py', '.venv\Lib\site-packages\httpcore\_backends\anyio.py', '.venv\Lib\site-packages\httpcore\_async\interfaces.py', '.venv\Lib\site-packages\httpcore\__init__.py', '.venv\Lib\site-packages\httpcore\_sync\http11.py', '.venv\Lib\site-packages\httpcore\_backends\__init__.py', '.venv\Lib\site-packages\httpx\_api.py', '.venv\Lib\site-packages\httpx\_config.py', '.venv\Lib\site-packages\httpcore\_api.py', '.venv\Lib\site-packages\httpcore\_backends\trio.py', '.venv\Lib\site-packages\httpcore\_sync\__init__.py'. Reloading...
+Process SpawnProcess-11:
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 76, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\main.py", line 14, in <module>
+    from app.models import User, WatchlistItem
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\models.py", line 25, in <module>
+    class WatchlistItem(Base):
+    ...<12 lines>...
+        user: Mapped[User] = relationship('User', back_populates='watch_items')
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_api.py", line 196, in __init__
+    _as_declarative(reg, cls, dict_)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 244, in _as_declarative
+    return _MapperConfig.setup_mapping(registry, cls, dict_, None, {})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 325, in setup_mapping
+    return _ClassScanMapperConfig(
+        registry, cls_, dict_, table, mapper_kw
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 572, in __init__
+    self._extract_mappable_attributes()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 1570, in _extract_mappable_attributes
+    value.declarative_scan(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<7 lines>...
+        is_dataclass,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\properties.py", line 709, in declarative_scan
+    self._init_column_for_annotation(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cls,
+        ^^^^
+    ...<2 lines>...
+        originating_module,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\properties.py", line 751, in _init_column_for_annotation
+    argument = de_stringify_union_elements(
+        cls, argument, originating_module
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\util\typing.py", line 341, in de_stringify_union_elements
+    return make_union_type(
+        *[
+    ...<8 lines>...
+        ]
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\util\typing.py", line 478, in make_union_type
+    return cast(Any, Union).__getitem__(types)  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+TypeError: descriptor '__getitem__' requires a 'typing.Union' object but received a 'tuple'
+WARNING:  WatchFiles detected changes in 'app\models.py'. Reloading...
+Process SpawnProcess-12:
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\server.py", line 76, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Users\It Computer Point\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\main.py", line 14, in <module>
+    from app.models import User, WatchlistItem
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\models.py", line 26, in <module>
+    class WatchlistItem(Base):
+    ...<12 lines>...
+        user: Mapped[User] = relationship('User', back_populates='watch_items')
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_api.py", line 196, in __init__
+    _as_declarative(reg, cls, dict_)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 244, in _as_declarative
+    return _MapperConfig.setup_mapping(registry, cls, dict_, None, {})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 325, in setup_mapping
+    return _ClassScanMapperConfig(
+        registry, cls_, dict_, table, mapper_kw
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 572, in __init__
+    self._extract_mappable_attributes()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 1570, in _extract_mappable_attributes
+    value.declarative_scan(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<7 lines>...
+        is_dataclass,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\properties.py", line 709, in declarative_scan
+    self._init_column_for_annotation(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cls,
+        ^^^^
+    ...<2 lines>...
+        originating_module,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\orm\properties.py", line 751, in _init_column_for_annotation
+    argument = de_stringify_union_elements(
+        cls, argument, originating_module
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\util\typing.py", line 341, in de_stringify_union_elements
+    return make_union_type(
+        *[
+    ...<8 lines>...
+        ]
+    )
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\sqlalchemy\util\typing.py", line 478, in make_union_type
+    return cast(Any, Union).__getitem__(types)  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+TypeError: descriptor '__getitem__' requires a 'typing.Union' object but received a 'tuple'
+WARNING:  WatchFiles detected changes in 'app\models.py'. Reloading...
+INFO:     Started server process [9264]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     ('127.0.0.1', 55609) - "WebSocket /ws/chat" [accepted]
+INFO:     ('127.0.0.1', 63862) - "WebSocket /ws/chat" [accepted]
+INFO:     ('127.0.0.1', 51285) - "WebSocket /ws/chat" [accepted]
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 242, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 152, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 77, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 362, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 95, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 93, in app
+    await func(session)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\fastapi\routing.py", line 383, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\main.py", line 337, in chat_socket
+    raw = await websocket.receive_text()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\websockets.py", line 117, in receive_text
+    raise RuntimeError('WebSocket is not connected. Need to call "accept" first.')
+RuntimeError: WebSocket is not connected. Need to call "accept" first.
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 242, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 152, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 77, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 362, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 95, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 93, in app
+    await func(session)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\fastapi\routing.py", line 383, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\main.py", line 337, in chat_socket
+    raw = await websocket.receive_text()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\websockets.py", line 117, in receive_text
+    raise RuntimeError('WebSocket is not connected. Need to call "accept" first.')
+RuntimeError: WebSocket is not connected. Need to call "accept" first.
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 242, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 152, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 77, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 362, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 95, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\routing.py", line 93, in app
+    await func(session)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\fastapi\routing.py", line 383, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\app\main.py", line 337, in chat_socket
+    raw = await websocket.receive_text()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\It Computer Point\Desktop\NASA\backend\.venv\Lib\site-packages\starlette\websockets.py", line 117, in receive_text
+    raise RuntimeError('WebSocket is not connected. Need to call "accept" first.')
+RuntimeError: WebSocket is not connected. Need to call "accept" first.
+WARNING:  WatchFiles detected changes in 'app\db.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9264]
+INFO:     Started server process [4296]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app\auth.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4296]
+INFO:     Started server process [11792]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     ('127.0.0.1', 65094) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 58135) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 58015) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 62454) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+WARNING:  WatchFiles detected changes in 'app\services\neo_processing.py'. Reloading...
+INFO:     Shutting down
+INFO:     connection closed
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11792]
+INFO:     Started server process [3344]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     ('127.0.0.1', 64476) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 57575) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 55870) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 55412) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 53878) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 60901) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 50637) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 52743) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 57267) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 57355) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 58679) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 58379) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 53923) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 53808) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 58839) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 61643) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 64955) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 53223) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 57958) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 51453) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 60862) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 51701) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 50892) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 50885) - "WebSocket /ws/chat" [accepted]
+INFO:     connection open

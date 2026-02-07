@@ -1,0 +1,293 @@
+{
+  "info": {
+    "_postman_id": "f0f6f0f4-6f7f-4b11-a4b6-92d0ea44d9d4",
+    "name": "NASA Cosmic Watch API",
+    "description": "Collection for Cosmic Watch backend APIs with tests for healthy flow and error handling.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "const now = new Date();",
+          "const start = now.toISOString().slice(0, 10);",
+          "const end = new Date(now);",
+          "end.setDate(end.getDate() + 2);",
+          "const invalidEnd = new Date(now);",
+          "invalidEnd.setDate(invalidEnd.getDate() - 1);",
+          "pm.collectionVariables.set('startDate', start);",
+          "pm.collectionVariables.set('endDate', end.toISOString().slice(0, 10));",
+          "pm.collectionVariables.set('invalidEndDate', invalidEnd.toISOString().slice(0, 10));"
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "startDate",
+      "value": ""
+    },
+    {
+      "key": "endDate",
+      "value": ""
+    },
+    {
+      "key": "invalidEndDate",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["health"]
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 200', function () {",
+                  "  pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test('Health payload is valid', function () {",
+                  "  const json = pm.response.json();",
+                  "  pm.expect(json).to.have.property('status', 'ok');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/",
+              "host": ["{{baseUrl}}"],
+              "path": [""]
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 200', function () {",
+                  "  pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test('Root message exists', function () {",
+                  "  const json = pm.response.json();",
+                  "  pm.expect(json).to.have.property('message');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NEO Feed",
+      "item": [
+        {
+          "name": "GET /api/neo/feed (valid date range)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/neo/feed?start_date={{startDate}}&end_date={{endDate}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "neo", "feed"],
+              "query": [
+                {
+                  "key": "start_date",
+                  "value": "{{startDate}}"
+                },
+                {
+                  "key": "end_date",
+                  "value": "{{endDate}}"
+                }
+              ]
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 200', function () {",
+                  "  pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test('Feed payload structure is valid', function () {",
+                  "  const json = pm.response.json();",
+                  "  pm.expect(json).to.have.property('start_date');",
+                  "  pm.expect(json).to.have.property('end_date');",
+                  "  pm.expect(json).to.have.property('asteroid_count');",
+                  "  pm.expect(json).to.have.property('items');",
+                  "  pm.expect(json.items).to.be.an('array');",
+                  "});",
+                  "pm.test('Each item includes required fields', function () {",
+                  "  const json = pm.response.json();",
+                  "  if (json.items.length > 0) {",
+                  "    const item = json.items[0];",
+                  "    ['id', 'name', 'close_approach_date', 'risk_score', 'risk_category'].forEach((k) => {",
+                  "      pm.expect(item).to.have.property(k);",
+                  "    });",
+                  "  }",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "GET /api/neo/feed (end_date before start_date)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/neo/feed?start_date={{startDate}}&end_date={{invalidEndDate}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "neo", "feed"],
+              "query": [
+                {
+                  "key": "start_date",
+                  "value": "{{startDate}}"
+                },
+                {
+                  "key": "end_date",
+                  "value": "{{invalidEndDate}}"
+                }
+              ]
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 400 for invalid date order', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "});",
+                  "pm.test('Error message is meaningful', function () {",
+                  "  const json = pm.response.json();",
+                  "  pm.expect(json).to.have.property('detail');",
+                  "  pm.expect(String(json.detail)).to.include('end_date cannot be before start_date');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "GET /api/neo/feed (range exceeds 7 days)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/neo/feed?start_date=2026-01-01&end_date=2026-01-10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "neo", "feed"],
+              "query": [
+                {
+                  "key": "start_date",
+                  "value": "2026-01-01"
+                },
+                {
+                  "key": "end_date",
+                  "value": "2026-01-10"
+                }
+              ]
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 400 for >7 day range', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "});",
+                  "pm.test('Error message mentions range limit', function () {",
+                  "  const json = pm.response.json();",
+                  "  pm.expect(json).to.have.property('detail');",
+                  "  pm.expect(String(json.detail)).to.include('date range cannot exceed 7 days');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Summary",
+      "item": [
+        {
+          "name": "GET /api/neo/today-summary",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/neo/today-summary",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "neo", "today-summary"]
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 200', function () {",
+                  "  pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test('Summary payload has expected fields', function () {",
+                  "  const json = pm.response.json();",
+                  "  ['date', 'total', 'high_risk', 'medium_risk', 'low_risk'].forEach((k) => {",
+                  "    pm.expect(json).to.have.property(k);",
+                  "  });",
+                  "});",
+                  "pm.test('Risk buckets add up to total', function () {",
+                  "  const json = pm.response.json();",
+                  "  pm.expect(json.high_risk + json.medium_risk + json.low_risk).to.eql(json.total);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

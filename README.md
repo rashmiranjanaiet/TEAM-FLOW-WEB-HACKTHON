@@ -14,6 +14,10 @@ Edit `.env` if needed, especially `NASA_API_KEY`.
 docker compose up --build
 ```
 
+This setup now uses multi-stage Docker builds:
+- Frontend: `node` build stage -> `nginx` runtime stage
+- Backend: Python dependency builder stage -> slim runtime stage
+
 Services:
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:8000`
@@ -28,3 +32,30 @@ python -m venv backend/.venv
 pip install -r backend/requirements.txt
 uvicorn app.main:app --app-dir backend --reload
 ```
+
+## 4) Postman collection (complete)
+
+Import these files into Postman:
+- `postman/NASA-Cosmic-Watch.postman_collection.json`
+- `postman/NASA-Cosmic-Watch.local.postman_environment.json`
+
+Included coverage:
+- Environment variables: `baseUrl`, `startDate`, `endDate`, `invalidEndDate`
+- Pre-request script auto-generates date variables
+- Test cases for:
+  - `GET /health`
+  - `GET /`
+  - `GET /api/neo/feed` (valid range)
+  - `GET /api/neo/feed` (`end_date` before `start_date` -> 400)
+  - `GET /api/neo/feed` (range > 7 days -> 400)
+  - `GET /api/neo/today-summary`
+
+## 5) Real-time community chat (WebSocket)
+
+Bonus feature is implemented with FastAPI WebSockets:
+- Backend endpoint: `ws://localhost:8000/ws/chat`
+- Frontend includes a live chat panel with:
+  - auto-connect and auto-reconnect
+  - online user count
+  - username updates
+  - broadcast messages to all connected clients
